@@ -1,2 +1,0 @@
-# wuzu
-e-mall repository
