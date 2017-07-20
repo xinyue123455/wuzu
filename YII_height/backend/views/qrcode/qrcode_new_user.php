@@ -57,6 +57,7 @@ use yii\widgets\ActiveForm;
                 <th>姓名</th>
                 <th>手机</th>
                 <th>性别</th>
+                <th>注册时间</th>
                 <th>状态</th>
                 <th>操作</th>
             </tr>
@@ -69,6 +70,7 @@ use yii\widgets\ActiveForm;
                     <td><?= $val['home_name']?></td>
                     <td><?= $val['home_phone']?></td>
                     <td><?= $val['home_sex']?></td>
+                    <td><?= $val['home_create_time']?></td>
                     <td><?php if($val['home_status'] == 1){echo '正常';}else{echo '禁用';} ?></td>
                     <td>
                         <a href="?r=index/member_info&home_id=<?= $val['home_id']?>">

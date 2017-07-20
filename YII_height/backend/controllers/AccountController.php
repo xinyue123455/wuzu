@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use yii\web\Controller;
-use backend\models\Home_user;
+use backend\models\Admin_User;
 
 class AccountController extends Controller {
     public function __construct($id, $module, $config = array()){
@@ -19,14 +19,23 @@ class AccountController extends Controller {
      * 账户列表
      */
     public function actionAccount_index(){
-        return $this->render('account_index');
+        $model = new Admin_user;
+        $info = $model->admin_user_info();
+        return $this->render('account_index', [
+            'info' => $info
+        ]);
     }
     
     /**
-     * 账户信息
+     * 账户信息--单个账户
      */
     public function actionAccount_info(){
-        return $this->render('account_info');
+        $model = new Admin_user;
+        $user_id = Yii::$app->request->get("user_id"); //接收id
+        $admin_info_one = $model->admin_user_one($user_id);
+        return $this->render('account_info', [
+            'admin_info_one' => $admin_info_one
+        ]);
     }
     
     /**

@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="m-b-md">
-                    <a class="btn btn-outline btn-primary pull-right" href="/web/member/set?id=1">编辑</a>
+                    <a class="btn btn-outline btn-primary pull-right" href="?r=index/member_set&home_id=<?= $member_info_one['home_id']?>">编辑</a>
                     <h2>会员信息</h2>
                 </div>
             </div>

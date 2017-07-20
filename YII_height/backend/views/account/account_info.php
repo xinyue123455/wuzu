@@ -25,12 +25,11 @@
         </div>
         <div class="row">
             <div class="col-lg-2 text-center">
-                <img class="img-circle circle-border" src="/images/common/qrcode.jpg" width="100px" height="100px"/>
+                <img class="img-circle circle-border" src="<?= $admin_info_one['login_img'];?>" width="100px" height="100px"/>
             </div>
             <div class="col-lg-10">
-                <p class="m-t">姓名：编程浪子郭大爷</p>
-                <p>手机：11012345679</p>
-                <p>邮箱：apanly@126.com</p>
+                <p class="m-t">姓名：<?= $admin_info_one['login_name'];?></p>
+                <p>密码：<?= $admin_info_one['login_pwd']?></p>
             </div>
         </div>
         <div class="row m-t">

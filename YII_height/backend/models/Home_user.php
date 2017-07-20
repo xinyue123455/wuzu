@@ -4,7 +4,7 @@ namespace backend\models;
 use Yii; 
 use yii\db\Query;
 use yii\base\Model;
-use yii\data\Pagination;
+//use yii\data\Pagination;
 
 class Home_user extends Model{
     /**
